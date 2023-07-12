@@ -36,7 +36,7 @@ const links = [
 export default function Nav() {
   return (
     <div className={styles.container}>
-      <Link href="/"> Khaled</Link>
+      <Link href="/"> Khaled essam</Link>
       <div className={styles.links}>
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
