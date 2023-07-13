@@ -37,20 +37,17 @@ const links = [
 export default function Nav() {
   return (
     <div className={styles.container}>
-      <Link href="/"> Khaled essam</Link>
+      <Link href="/" className={styles.logo}>
+        {" "}
+        Khaled essam
+      </Link>
       <div className={styles.links}>
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
           </Link>
         ))}
-        <button
-          onClick={() => {
-            console.log("out");
-          }}
-        >
-          logout
-        </button>
+        <button className={styles.logout}>logout</button>
       </div>
     </div>
   );
