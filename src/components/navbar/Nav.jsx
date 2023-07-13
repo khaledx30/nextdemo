@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.css";
@@ -43,6 +44,13 @@ export default function Nav() {
             {link.title}
           </Link>
         ))}
+        <button
+          onClick={() => {
+            console.log("out");
+          }}
+        >
+          logout
+        </button>
       </div>
     </div>
   );
