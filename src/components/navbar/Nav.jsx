@@ -38,7 +38,6 @@ export default function Nav() {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        {" "}
         Khaled essam
       </Link>
       <div className={styles.links}>
