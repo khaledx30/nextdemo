@@ -13,12 +13,12 @@
 
 .links {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
 }
 
 .logout {
-  padding: 5px;
+  padding: 10px;
   border: none;
   background-color: #53c28b;
   color: white;
