@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import styles from "./page.module.css";
 import Image from "next/image";
 // adjusting the img
@@ -12,7 +13,7 @@ export default function Home() {
           Turning your Idea into reality we bring together the team for the
           global tech industry
         </p>
-        <button className={styles.button}>see our works</button>
+        <Button url="/contact" text="see our works" />
       </div>
       <div className={`${styles.item} ${styles.fex}`}>
         <Image
