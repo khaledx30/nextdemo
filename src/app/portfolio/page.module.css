@@ -7,14 +7,14 @@
 .title {
   margin: 60px 0px;
 }
-
+/* item */
 .item {
   border: 5px solid #bbb;
   border-radius: 5px;
   height: 400px;
   width: 300px;
   position: relative;
-  background-size: cover !important;
+  background-size: cover;
 }
 .items {
   display: flex;
@@ -22,13 +22,13 @@
 }
 
 .item:nth-child(1) {
-  background: url("/illustration.png");
+  background-image: url("/illustration.png");
 }
 .item:nth-child(2) {
-  background: url("/websites.jpg");
+  background-image: url("/websites.jpg");
 }
 .item:nth-child(3) {
-  background: url("/apps.jpg");
+  background-image: url("/apps.jpg");
 }
 
 .s_title {
