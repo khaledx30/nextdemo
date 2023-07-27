@@ -28,6 +28,11 @@ a {
   background-color: #111;
   color: #bbb;
 }
+
+.light .Bdark {
+  border: 1px solid #111;
+}
+
 strong button {
   text-decoration: none;
   outline: none;
