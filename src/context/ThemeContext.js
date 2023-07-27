@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useState } from "react";
+// contextProvider
 
 export const ThemeContext = createContext();
 
