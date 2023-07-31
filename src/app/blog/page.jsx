@@ -5,7 +5,7 @@ import Image from "next/image";
 
 async function getData() {
   const varsel = process.env.VARSEL || "http://localhost:3000/api/posts";
-  const res = await fetch(varsel, {
+  const res = await fetch(`${varsel}`, {
     cache: "no-store",
   });
 
