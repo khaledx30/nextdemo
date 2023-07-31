@@ -11,12 +11,29 @@ body {
   background-color: #111;
   color: #bbb;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+.theme {
+  transition: 1s all ease;
+}
+.light {
+  background-color: white;
+  color: #111;
+}
 
-button {
+.dark {
+  background-color: #111;
+  color: #bbb;
+}
+
+.light .Bdark {
+  border: 1px solid #111;
+}
+
+strong button {
   text-decoration: none;
   outline: none;
   background-color: none;
