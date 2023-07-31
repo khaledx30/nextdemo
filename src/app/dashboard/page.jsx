@@ -36,7 +36,7 @@ const Dashboard = () => {
 
   const router = useRouter();
 
-  NEW WAY TO FETCH DATA
+  //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, mutate, error, isLoading } = useSWR(
@@ -58,7 +58,7 @@ const Dashboard = () => {
     const desc = e.target[1].value;
     const img = e.target[2].value;
     const content = e.target[3].value;
-
+    console.log(e.target);
     try {
       await fetch("/api/posts", {
         method: "POST",
