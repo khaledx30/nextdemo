@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api/posts", {
+  const varsel = process.env.VARSEL || "http://localhost:3000/api/posts";
+  const res = await fetch(varsel, {
     cache: "no-store",
   });
 

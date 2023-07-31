@@ -4,7 +4,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+  const varsel = process.env.VARSEL || `http://localhost:3000/api/posts/`;
+  const res = await fetch(`${varsel}/${id}`, {
     cache: "no-store",
   });
 
